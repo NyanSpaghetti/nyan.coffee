@@ -1,0 +1,25 @@
+{
+    "username": "",
+    "profession": "",
+    "description": "",
+    "image": "",
+    "socials": {
+        "github": "",
+        "twitter": "",
+        "discord": "",
+        "email": ""
+    },
+    "projets": [
+        {
+            "name": "",
+            "description": "",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "name": "",
+            "url": ""
+        }
+    ]
+}

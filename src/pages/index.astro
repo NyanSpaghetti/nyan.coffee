@@ -1,0 +1,132 @@
+---
+import config from "../config.json";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<title>nyan.coffee</title>
+	</head>
+	<body class="text-white bg-zinc-800 h-screen w-screen">
+		<div class="m-4 mb-16">
+			<div class="w-full flex flex-col justify-center items-center">
+				<div
+					class="flex flex-col items-center justify-center max-w-[980px] w-full"
+				>
+					<!-- Intro -->
+					<div class="flex flex-col w-full">
+						<div
+							class="flex flex-col sm:flex-row gap-8 justify-center items-center py-8 mb-8"
+						>
+							<img
+								alt={config.username}
+								src={config.image}
+								class="w-48 h-48 rounded-full"
+							/>
+							<div
+								class="flex flex-col items-center sm:items-start gap-1 justify-center max-w-sm"
+							>
+								<h1 class="font-bold text-4xl">
+									{config.username} [{config.pronouns}]
+								</h1>
+								<p class="text-zinc-400">
+									{config.profession}
+								</p>
+								<p>
+									{config.description}
+								</p>
+							</div>
+						</div>
+
+						<div class="flex flex-col gap-24">
+							<!-- Projects -->
+							<div class="flex flex-col gap-4">
+								<div class="flex flex-col">
+									<h1 class="text-3xl font-bold">
+										~/projects
+									</h1>
+									<p class="text-zinc-400">
+										Listed below are a few projects I've
+										contributed to:
+									</p>
+								</div>
+								<div class="flex flex-col sm:flex-row gap-4">
+									{
+										config.projects.map((e) => (
+											<a
+												class="border border-zinc-600 rounded-md w-full p-4 hover:scale-[102.5%] transform-gpu transition-all duration-200"
+												href={e.url}
+												target="blank"
+											>
+												<h1 class="font-bold text-2xl">
+													{e.name}
+												</h1>
+												<p class="text-zinc-200">
+													{e.description}
+												</p>
+											</a>
+										))
+									}
+									<div
+										class="border border-zinc-600 border-dashed rounded-md w-full p-4 text-center justify-center flex flex-col"
+									>
+										<p class="text-zinc-400">
+											Want a full list?
+										</p>
+										<a
+											href={config.socials.github}
+											target="blank"
+										>
+											<h1
+												class="font-bold text-lg hover:text-zinc-200 transition-all"
+											>
+												Learn more &rightarrow;
+											</h1>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Links -->
+							<div class="flex flex-col gap-6">
+								<div class="flex flex-col">
+									<h1 class="text-3xl font-bold">~/links</h1>
+									<p class="text-zinc-400">
+										A few useful links are provided below:
+									</p>
+								</div>
+
+								{
+									config.links.map((e) => (
+										<a href={e.url} target="_blank">
+											<div class="flex flex-row justify-center w-full items-center">
+												<p>{e.name}</p>
+												<div class="flex flex-grow flex-1 rounded-md border border-zinc-600 h-[2px] mx-4 justify-center items-center" />
+												<p class="text-zinc-400">
+													{e.url.slice(8)}{" "}
+													&rightarrow;
+												</p>
+											</div>
+										</a>
+									))
+								}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex-row justify-center items-center pb-4 gap-1">
+			<p class="text-zinc-400">Made with 💖 by {" "}</p>
+			<a
+				href="https://github.com/tygerxqt"
+				target="_blank"
+				class="text-zinc-400 hover:text-zinc-200 transition-all"
+			>
+				tygerxqt.
+			</a>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+{
+    "username": "Nyan",
+    "pronouns": "he/him",
+    "profession": "Software Engineer",
+    "description": "A software engineer at Nord and Lofu Studio, currently learning C++ and Rust.",
+    "image": "https://avatars.githubusercontent.com/u/47715070?v=4",
+    "socials": {
+        "github": "https://github.com/NyanSpaghetti",
+        "twitter": "https://twitter.com/NyanSpaghetti",
+        "discord": "https://discord.com/users/682326157580173338",
+        "email": "mailto:nyan@nyan.coffee"
+    },
+    "projects": [
+        {
+            "name": "nyan.coffee",
+            "description": "My simple static site made with Astro and TailwindCSS.",
+            "url": "https://github.com/NyanSpaghetti/nyan.coffee"
+        },
+        {
+            "name": "Arisu",
+            "description": "Arisu is a simple Discord bot made by me and @tygerxqt!",
+            "url": "https://github.com/lofustudio/arisu"
+        }
+    ],
+    "links": [
+        {
+            "name": "Nord Studio",
+            "url": "https://nordstud.io"
+        },
+        {
+            "name": "Lofu Studio",
+            "url": "https://lofu.studio"
+        },
+        {
+            "name": "Campsite",
+            "url": "https://campsite.chat"
+        },
+        {
+            "name": "tygr.dev",
+            "url": "https://tygr.dev"
+        }
+    ]
+}
