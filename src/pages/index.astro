@@ -1,24 +1,25 @@
 ---
 import config from "../config.json";
+import { Icon } from "astro-icon";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<link rel="icon" type="image/ico" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<title>nyan.coffee</title>
 	</head>
-	<body class="text-white bg-zinc-800 w-screen">
-		<div class="mb-16 mx-4 sm:mx-8">
-			<div class="w-full flex flex-col justify-center items-center">
+	<body class="bg-zinc-800 text-zinc-100">
+		<div class="m-8 sm:m-12">
+			<div class="w-full flex justify-center items-center">
 				<div
 					class="flex flex-col items-center justify-center max-w-[980px] w-full"
 				>
 					<!-- Intro -->
-					<div class="flex flex-col w-full">
+					<div class="flex flex-col w-full gap-20">
 						<div
-							class="flex flex-col sm:flex-row gap-8 justify-center items-center py-8 mb-8"
+							class="flex flex-col sm:flex-row gap-8 justify-center items-center"
 						>
 							<img
 								alt={config.username}
@@ -35,15 +36,46 @@ import config from "../config.json";
 									>
 								</h1>
 								<p class="text-zinc-400">
-									{config.profession}
-								</p>
-								<p class="text-zinc-200">
 									{config.description}
 								</p>
+
+								<!-- Socials -->
+								<div
+									class="py-2 flex flex-row gap-4 items-center justify-center"
+								>
+									<a href={config.socials.github}>
+										<Icon
+											pack="bi"
+											name="github"
+											class="w-6 h-6 hover:text-zinc-300 transition-all"
+										/>
+									</a>
+									<a href={config.socials.twitter}>
+										<Icon
+											pack="bi"
+											name="twitter"
+											class="w-6 h-6 hover:text-zinc-300 transition-all"
+										/>
+									</a>
+									<a href={config.socials.discord}>
+										<Icon
+											pack="bi"
+											name="discord"
+											class="w-6 h-6 hover:text-zinc-300 transition-all"
+										/>
+									</a>
+									<a href={config.socials.email}>
+										<Icon
+											pack="bi"
+											name="envelope-fill"
+											class="w-6 h-6 hover:text-zinc-300 transition-all"
+										/>
+									</a>
+								</div>
 							</div>
 						</div>
 
-						<div class="flex flex-col gap-24">
+						<div class="flex flex-col gap-20">
 							<!-- Projects -->
 							<div class="flex flex-col gap-4">
 								<div class="flex flex-col">
@@ -121,7 +153,9 @@ import config from "../config.json";
 				</div>
 			</div>
 		</div>
-		<div class="flex flex-row justify-center items-center pb-2 gap-1">
+		<footer
+			class="flex flex-row justify-center items-center gap-1 w-full text-center"
+		>
 			<p class="text-zinc-400">Made with 💖 by {" "}</p>
 			<a
 				href="https://github.com/tygerxqt"
@@ -130,6 +164,6 @@ import config from "../config.json";
 			>
 				tygerxqt.
 			</a>
-		</div>
+		</footer>
 	</body>
 </html>
