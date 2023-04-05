@@ -1,3 +1,4 @@
 # ☕ nyan.coffee
 
-My simple static site made by the infamous [@tygerxqt](https://github.com/tygerxqt)!
+My simple static site made with Astro and TailwindCSS.  
+Made by [@tygerxqt](https://github.com/tygerxqt)!
