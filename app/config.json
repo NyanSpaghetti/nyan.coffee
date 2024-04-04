@@ -2,18 +2,18 @@
     "username": "Nyan",
     "pronouns": "he/him",
     "description": "A software engineer at Nord and Lofu Studio, currently learning C++ and Rust.",
-    "image": "https://avatars.githubusercontent.com/u/47715070?v=4",
+    "image": "https://github.com/NyanSpaghetti.png",
     "socials": {
         "github": "https://github.com/NyanSpaghetti",
-        "twitter": "https://twitter.com/NyanSpaghetti",
+        "twitter": "https://twitter.com/nyan_spaghetti",
         "discord": "https://discord.com/users/682326157580173338",
         "email": "mailto:nyan@nyan.coffee"
     },
     "projects": [
         {
-            "name": "nyan.coffee",
-            "description": "My simple static site made with Astro and TailwindCSS.",
-            "url": "https://github.com/NyanSpaghetti/nyan.coffee"
+            "name": "Campsite",
+            "description": "A secure, speedy, small communication platform. Time to cut the cord.",
+            "url": "https://github.com/campsite-chat"
         },
         {
             "name": "Arisu",
