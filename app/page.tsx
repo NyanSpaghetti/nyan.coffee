@@ -165,7 +165,7 @@ export default function Home() {
                         <footer className="flex flex-row items-center justify-center w-full gap-1 text-center">
                             <p className="text-neutral-400">Made with 💖 by </p>
                             <a
-                                href="https://github.com/tygrxqt"
+                                href="https://github.com/tygrdotdev"
                                 target="_blank"
                                 className="transition-all text-neutral-400 hover:text-neutral-200"
                             >
