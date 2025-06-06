@@ -8,7 +8,7 @@ import "./globals.css";
 export const metadata: Metadata = {
     title: "nyan.coffee",
     description:
-        "A software engineer at Nord and Lofu Studio, currently learning C++ and Rust.",
+        "A software engineer at Nord Studio, currently learning C++ and Rust.",
 };
 
 export default function RootLayout({

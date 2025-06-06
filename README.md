@@ -1,4 +1,4 @@
 # ☕ nyan.coffee
 
-My simple static site made with Astro and TailwindCSS.  
-Made by [@tygerxqt](https://github.com/tygerxqt)!
+My simple static site made with NextJS and TailwindCSS.  
+Made by [@tygrdev](https://github.com/tygrdotdev)!
