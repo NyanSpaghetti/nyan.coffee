@@ -1,28 +1,16 @@
 {
 	"name": "nyan.coffee",
-	"version": "0.1.0",
-	"private": true,
+	"type": "module",
+	"version": "1.0.0",
 	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint"
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
 	},
 	"dependencies": {
-		"next": "15.3.3",
-		"react": "^19.1.0",
-		"react-dom": "^19.1.0"
-	},
-	"devDependencies": {
-		"@types/node": "^22.15.30",
-		"@types/react": "^19.1.6",
-		"@types/react-dom": "^19.1.6",
-		"autoprefixer": "^10.4.21",
-		"eslint": "^9.28.0",
-		"eslint-config-next": "15.3.3",
-		"postcss": "^8.5.4",
-		"tailwindcss": "^4.1.8",
-		"typescript": "^5.8.3",
-		"@tailwindcss/postcss": "^4.1.8"
+		"@tailwindcss/vite": "^4.1.11",
+		"astro": "^5.12.3",
+		"tailwindcss": "^4.1.11"
 	}
 }
